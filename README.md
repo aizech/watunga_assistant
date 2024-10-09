@@ -4,7 +4,6 @@ This is a simple Python-based chat application using Streamlit and OpenAI's Assi
 
 If you need help with assistants for your business, check out our website [www.watunga.ai](https://www.watunga.ai)
 
-
 ## Table of Contents
 - [My Watunga Assistant - Python Chat Application](#my-watunga-assistant---python-chat-application)
   - [Table of Contents](#table-of-contents)
@@ -38,6 +37,12 @@ Before running the code, make sure you have the necessary dependencies installed
     pip install streamlit openai python-dotenv
     ```
 
+    or just use the requirements.txt
+
+    ```
+    pip install -r requirements.txt
+    ```
+
 2. Create a `.env` file in the project directory with the following content:
 
     ```
@@ -45,13 +50,15 @@ Before running the code, make sure you have the necessary dependencies installed
     VECTORSTORE_ID=vs_1mZ0szKcmKEYz[...]
     DEFAULT_MODEL=gpt-4o-mini
     DEFAULT_TEMPERATURE=0.3
-    TITLE=My Assistant
+    TITLE=My Watunga Assistant
     BASE_PATH=C:/users/myuser/PythonCodes/Assistant API
     LOGO=assets/logo.png
     AVATAR_ASSISTANT=assets/avatar_assistant.png
     AVATAR_USER=assets/avatar_user.png
     INSTRUCTION_TEXT="You respond as an expert, using only your knowledge base without fabricating information. You answer in English, addressing employees informally unless they use formal language."
     ```
+
+    or just copy the `.env.bkp` to `.env` and edit the variables.
 
 3. Edit the `model.json` file in the project directory to delivery the AI models, the user can select:
 
@@ -90,7 +97,6 @@ Before running the code, make sure you have the necessary dependencies installed
     }
     ```
 
-
 ## Code Explanation
 
 ### Imports
@@ -103,6 +109,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 ```
+
 * `json`: Used to load configuration files in JSON format.
 * `streamlit`: A library for creating interactive web applications in Python.
 * `time`: Used for controlling the flow and adding pauses when waiting for API responses.
@@ -170,7 +177,6 @@ query = st.chat_input("Enter your question/prompt:")
 
 * `st.chat_input`: Adds a text input box for user queries. The user can type their questions here.
 
-
 ### Sidebar for Settings and Debugging
 
 ```python
@@ -237,7 +243,6 @@ if query:
 * `st.chat_message`: Displays the AI’s response in the chat window.
 
 * The code also appends the messages and updates the session state with token usage and costs.
-
 
 ## Running the Application
 
