@@ -56,7 +56,6 @@ Before running the code, make sure you have the necessary dependencies installed
     LOGO=assets/logo.png
     AVATAR_ASSISTANT=assets/avatar_assistant.png
     AVATAR_USER=assets/avatar_user.png
-    INSTRUCTION_TEXT="You respond as an expert, using only your knowledge base without fabricating information. You answer in English, addressing employees informally unless they use formal language."
     ```
 
     or just copy the `.env.bkp` to `.env` and edit the variables.
