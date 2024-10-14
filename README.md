@@ -12,6 +12,7 @@ If you need help with assistants for your business, check out our website [www.w
   - [Code Explanation](#code-explanation)
     - [Imports](#imports)
     - [Loading Environment Variables](#loading-environment-variables)
+    - [Instructions for the Assistant](#instructions-for-the-assistant)
     - [Initializing Session State](#initializing-session-state)
     - [User Interface Setup](#user-interface-setup)
     - [Sidebar for Settings and Debugging](#sidebar-for-settings-and-debugging)
@@ -134,11 +135,14 @@ logo = os.getenv("LOGO")
 default_model = os.getenv("DEFAULT_MODEL")
 avatar__assistant = os.getenv("AVATAR_ASSISTANT")
 avatar_user = os.getenv("AVATAR_USER")
-instruction_text = os.getenv("INSTRUCTION_TEXT")
 vectorstore_id = os.getenv("VECTORSTORE_ID")
 ```
 
 Each of these lines retrieves a specific value from the environment and stores it in a variable. This keeps the code modular and configurable.
+
+### Instructions for the Assistant
+
+You can modify the `instructions.md`. Here the instructions for the assistant are defined e.g. to give the assistant a specific role or todo. 
 
 ### Initializing Session State
 
