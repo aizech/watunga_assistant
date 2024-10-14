@@ -9,7 +9,6 @@ import os
 # load .env
 load_dotenv()
 
-
 # Fetching variables from the environment
 openai_key = os.getenv("OPENAI_API_KEY")
 base_path = os.getenv("BASE_PATH")
@@ -19,8 +18,10 @@ logo = os.getenv("LOGO")
 default_model = os.getenv("DEFAULT_MODEL")
 avatar_assistant = os.getenv("AVATAR_ASSISTANT")
 avatar_user = os.getenv("AVATAR_USER")
-instruction_text = os.getenv("INSTRUCTION_TEXT")
 vectorstore_id = os.getenv("VECTORSTORE_ID")
+
+# Read instructions.md for assistant
+instruction_text = open("instructions.md").read()
 
 # Initialization
 if "loaded" not in st.session_state:
