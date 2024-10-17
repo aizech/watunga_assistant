@@ -1,42 +1,32 @@
 {
     "gpt-4o-mini": {
         "input": {
-            "price": 5,
-            "tokens": 10000000
+            "price": 0.15,
+            "tokens": 1000000
         },
         "output": {
-            "price": 15,
-            "tokens": 10000000
+            "price": 0.60,
+            "tokens": 1000000
         }
     }, 
     "gpt-4o": {
         "input": {
-            "price": 5,
-            "tokens": 10000000
+            "price": 2.50,
+            "tokens": 1000000
         },
         "output": {
-            "price": 15,
-            "tokens": 10000000
+            "price": 10.00,
+            "tokens": 1000000
         }
     }, 
     "gpt-4-turbo": {
         "input": {
-            "price": 10,
-            "tokens": 10000000
+            "price": 10.00,
+            "tokens": 1000000
         },
         "output": {
-            "price": 30,
-            "tokens": 10000000
+            "price": 30.00,
+            "tokens": 1000000
         }
     }, 
-    "gpt-3.5-turbo": {
-        "input": {
-            "price": 0.5,
-            "tokens": 10000000
-        },
-        "output": {
-            "price": 1.5,
-            "tokens": 10000000
-        }
-    }        
 }
